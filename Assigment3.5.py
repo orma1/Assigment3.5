@@ -19,9 +19,9 @@ def process_text(s):
 s = "hello my NAME is OR"
 
 def repeat_frame(text, times=3, left='[', right=']'):
-    list = []
+    string = ""
     for i in range(times):
-        list.append(str(left+text+right))
-    return list
+        string += (str(left+text+right))
+    return string
 
-print(repeat_frame("hello"))
+print(repeat_frame("hi", times=2, left="<<", right=">>"))
